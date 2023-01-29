@@ -23,7 +23,12 @@ public final class Mapping {
     private static void initSpecialServiceList() {
         mSpecialServiceList.add(new Info(
                 "com.android.server.wm.ActivityTaskManagerDebugConfig",
-                new String[]{ "DEBUG_ALL", "TAG_WITH_CLASS_NAME", "APPEND_CATEGORY_NAME" } ));
+                new String[]{ "TAG_WITH_CLASS_NAME", "APPEND_CATEGORY_NAME", "DEBUG_ALL",
+                        "DEBUG_ALL_ACTIVITIES", "DEBUG_RECENTS", "DEBUG_RECENTS_TRIM_TASKS",
+                        "DEBUG_ROOT_TASK", "DEBUG_SWITCH", "DEBUG_TRANSITION", "DEBUG_VISIBILITY",
+                        "DEBUG_APP", "DEBUG_IDLE", "DEBUG_RELEASE", "DEBUG_USER_LEAVING",
+                        "DEBUG_PERMISSIONS_REVIEW", "DEBUG_RESULTS", "DEBUG_ACTIVITY_STARTS",
+                        "DEBUG_CLEANUP", "DEBUG_METRICS" } ));
         mSpecialServiceList.add(new Info(
                 "com.android.server.pm.verify.domain.DomainVerificationDebug",
                 new String[]{ "DEBUG_ANY", "DEBUG_ALL" } ));
